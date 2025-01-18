@@ -41,15 +41,16 @@ const SlideShow = () => {
         ))}
 
         <Slider {...slideShowSettings}>
-          {/* {peopleData.map((person, index) => (
-            <ImageCard
-              key={index}
-              imageSrc={person.imageSrc}
-              name={person.name}
-              role={person.role}
-              skills={person.skills}
-            />
-          ))} */}
+          {imageNames.map((name, index) => (
+            <div key={index} className="image-wrapper">
+              <Image
+                src={`/images/gallery/${name}.jpg`}
+                alt={`Image of ${name}`}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          ))}
         </Slider>
       </div>
     </section>
