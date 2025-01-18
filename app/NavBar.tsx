@@ -1,25 +1,29 @@
 import Image from "next/image";
+import Link from "next/link";
+
+interface NavLinkProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+  return (
+    <div className="rounded py-2 px-4 cursor-pointer group border border-transparent hover:bg-orange-100 hover:border-orange-300 transition-colors duration-300 text-xl">
+      <Link href={href}>{children}</Link>
+    </div>
+  );
+};
 
 export const Navbar = () => {
   return (
     <section className="w-full flex flex-col items-center gap-10">
       <Image src="/images/logo.jpg" alt="logo" width={100} height={100} />
-      <nav className="w-full flex justify-between items-center gap-4 px-40">
-        <div className="rounded py-2 px-4 cursor-pointer group border border-transparent hover:bg-orange-100 hover:border-orange-300 transition-colors duration-300 text-xl">
-          Palapinės
-        </div>
-        <div className="rounded py-2 px-4 cursor-pointer group border border-transparent hover:bg-orange-100 hover:border-orange-300 transition-colors duration-300 text-xl">
-          Nuoma
-        </div>
-        <div className="rounded py-2 px-4 cursor-pointer group border border-transparent hover:bg-orange-100 hover:border-orange-300 transition-colors duration-300 text-xl">
-          Kainos
-        </div>
-        <div className="rounded py-2 px-4 cursor-pointer group border border-transparent hover:bg-orange-100 hover:border-orange-300 transition-colors duration-300 text-xl">
-          Galerija
-        </div>
-        <div className="rounded py-2 px-4 cursor-pointer group border border-transparent hover:bg-orange-100 hover:border-orange-300 transition-colors duration-300 text-xl">
-          Apie mus
-        </div>
+      <nav className="w-full flex justify-between items-center gap-4 border-b border-orange-400 pb-4 px-40">
+        <NavLink href="/tents">Tents</NavLink>
+        <NavLink href="/about">About Us</NavLink>
+        <NavLink href="/contact">Contact</NavLink>
+        <NavLink href="/prices">Prices</NavLink>
+        <NavLink href="/galery">Gallerie</NavLink>
       </nav>
     </section>
   );

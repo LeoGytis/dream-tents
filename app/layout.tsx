@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 // import {Nunito, Inter, Lato, Quicksand} from "next/font/google";
 import { Quicksand } from "next/font/google";
+import Navbar from "./NavBar";
 
 const font = Quicksand({
   //   weight: "400",
@@ -20,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <div className="mx-auto max-w-screen-xl p-8 md:p-12 lg:p-20 lg:py-12">
+          <Navbar />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
