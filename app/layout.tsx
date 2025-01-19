@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 // import {Nunito, Inter, Lato, Quicksand} from "next/font/google";
 import { Quicksand } from "next/font/google";
+import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 
 const font = Quicksand({
@@ -26,6 +27,7 @@ export default function RootLayout({
         <main className="mx-auto max-w-screen-xl flex flex-col items-center justify-center">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

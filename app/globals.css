@@ -26,3 +26,9 @@ body {
   background-color: #baccd1;
   background-image: url("https://www.transparenttextures.com/patterns/paper.png");
 }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
