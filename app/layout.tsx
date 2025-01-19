@@ -23,7 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Navbar />
-        <div className="mx-auto max-w-screen-xl">{children}</div>
+        <main className="mx-auto max-w-screen-xl flex flex-col items-center justify-center">
+          {children}
+        </main>
       </body>
     </html>
   );
