@@ -1,22 +1,24 @@
 import Image from "next/image";
-import React from "react";
 
-interface TentsSectionProps {
-  imageSrc: string;
-}
-
-const TentsSection: React.FC<TentsSectionProps> = ({ imageSrc }) => {
+const TentsSection = () => {
   return (
-    <article className="relative flex flex-col min-h-[400px] min-w-[240px] transform transition-transform duration-300 ease-in-out hover:scale-105 p-5 m-10">
-      <Image
-        src={imageSrc}
-        alt={"image"}
-        fill
-        loading="lazy"
-        className="object-cover rounded-3xl"
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-      />
-    </article>
+    <section className="w-full relative flex h-[400px] p-5 m-10 pt-96">
+      <div className="w-1/2 flex justify-end">
+        <h1 className="text-4xl font-bold text-center text-blue-600">
+          RENT TENTS HERE
+        </h1>
+      </div>
+      <div className="w-1/2 h-full">
+        <Image
+          src={`/images/tentssection.jpg`}
+          alt="tentssection"
+          // width={500}
+          // height={500}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </section>
   );
 };
 

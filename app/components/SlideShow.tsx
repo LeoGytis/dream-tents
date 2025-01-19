@@ -20,7 +20,7 @@ const SlideShow = () => {
   };
 
   return (
-    <section className="relative">
+    <section className="relative h-[500px] w-full">
       <div className="w-[100vw] absolute left-1/2 transform -translate-x-1/2 ">
         <Slider {...slideShowSettings}>
           {imageNames.map((name, index) => (
