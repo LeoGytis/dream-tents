@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <section className="bg-[#252525] p-10 px-16">
-      <div className="mx-auto max-w-screen-xl flex justify-between items-center text-orange-500">
+    <section className="bg-[#f9f3e9] border-t border-orange-500">
+      <div className="mx-auto max-w-screen-xl flex justify-between items-center text-xl py-16 ">
         <div className="flex flex-col gap-4">
           <h3>Paslaugos</h3>
           <span>Nuoma</span>
