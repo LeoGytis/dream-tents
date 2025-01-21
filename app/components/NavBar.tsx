@@ -16,9 +16,9 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
 
 export const Navbar = () => {
   return (
-    <section className="mx-auto max-w-screen-xl sticky top-0 z-50 w-full flex flex-col items-center gap-4 bg-white pt-4 ">
+    <section className="mx-auto max-w-screen-xl sticky top-0 z-50 w-full flex flex-col items-center gap-4 pt-4 nav-bar">
       <Image src="/images/logo.jpg" alt="logo" width={150} height={150} />
-      <nav className="w-full flex justify-between items-center gap-4 border-b border-orange-400 pb-4 px-40  bg-white">
+      <nav className="w-full flex justify-between items-center gap-4 border-b border-orange-400 pb-4 px-40 ">
         <NavLink href="/tents">Tents</NavLink>
         <NavLink href="/about">About Us</NavLink>
         <NavLink href="/contact">Contact</NavLink>
