@@ -53,6 +53,21 @@ h3 {
   font-size: 1.25rem;
 }
 
+button {
+  width: fit-content;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
 .nav-bar {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");

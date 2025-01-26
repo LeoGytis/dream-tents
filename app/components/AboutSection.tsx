@@ -1,17 +1,30 @@
+import Image from "next/image";
+
 const AboutSection = () => {
   return (
     <section
       id="aboutSection"
-      className="w-full h-[400px] relative flex p-5 m-10"
+      className="w-full h-[400px] flex gap-8 my-10 mx-10"
     >
-      <div className="w-[100vw] h-[400px] absolute left-1/2 transform -translate-x-1/2 flex">
-        <div className="w-1/2 flex flex-col justify-center items-end gap-4 p-6">
-          <h1 className="">About us</h1>
-          <h1 className="">About</h1>
-          <h1 className="">About</h1>
-          <h1 className="">About</h1>
-          <h1 className="">About</h1>
-        </div>
+      <div className="w-1/2 flex flex-col items-end gap-4">
+        <h1>About Us</h1>
+        <p className="text-end">
+          Our mission is to create stylish and modern spaces tailored to your
+          unique needs, ensuring a seamless and memorable experience. To enhance
+          your event, we also offer a range of additional services, including
+          furniture rentals, pavilion lighting, and illuminated letter rentals,
+          making it easy to bring your vision to life. Let us help you create an
+          unforgettable celebration with our professional and comprehensive
+          event services.
+        </p>
+      </div>
+      <div className="w-1/2 h-full relative">
+        <Image
+          src={`/images/about_us.jpg`}
+          alt="tentssection"
+          fill
+          objectFit="cover"
+        />
       </div>
     </section>
   );

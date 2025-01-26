@@ -17,9 +17,7 @@ const HeroSection = () => {
         <div className="absolute z-10 left-0 bottom-4 w-1/2 flex flex-col text-white m-16">
           <h1>DREAM TENTS</h1>
           <h3>Forever under blissfull dream</h3>
-          <button className="w-fit border border-white cursor-pointer hover:bg-black hover:border-black transition-colors duration-300 py-3 px-10 mt-8">
-            ORDER NOW
-          </button>
+          <button className="py-3 px-10 mt-8">ORDER NOW</button>
         </div>
       </div>
     </section>
