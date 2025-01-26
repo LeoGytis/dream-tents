@@ -69,4 +69,5 @@ button:hover {
 .nav-bar {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+  box-shadow: 0 8px 20px -4px #00000033, 0 12px 25px -6px #00000026;
 }
