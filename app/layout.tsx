@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Navbar />
-        <main className="mx-auto max-w-screen-xl flex flex-col items-center justify-center">
+        <main className="mx-auto max-w-screen-xl min-h-svh flex flex-col items-center justify-center">
           {children}
         </main>
         <Footer />

@@ -1,20 +1,31 @@
+"use client";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Link } from "react-scroll";
 
 interface NavLinkProps {
-  href: string;
+  to: string;
   children: React.ReactNode;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+const NavLink: React.FC<NavLinkProps> = ({ to, children }) => {
   return (
-    <div className="rounded cursor-pointer group border-b border-b-transparent hover:bg-orange-100 hover:border-b-orange-300 transition-colors duration-300 text-xl py-2 px-6">
-      <Link href={href}>{children}</Link>
-    </div>
+    <Link
+      to={to}
+      smooth={true}
+      duration={500}
+      offset={-100}
+      className="rounded cursor-pointer border-b border-b-transparent hover:bg-orange-100 hover:border-b-orange-300 transition-colors duration-300 text-xl py-2 px-6"
+    >
+      {children}
+    </Link>
   );
 };
 
 export const Navbar = () => {
+  const router = useRouter();
+
   return (
     <section className="sticky top-0 z-50 flex justify-between items-center border-b border-orange-400 py-4 px-10 nav-bar">
       <Image
@@ -22,13 +33,15 @@ export const Navbar = () => {
         alt="logo"
         width={150}
         height={150}
+        onClick={() => router.push("/")}
+        className="hover:cursor-pointer"
       />
       <nav className="w-full flex justify-end items-center gap-2">
-        <NavLink href="/tents">Tents</NavLink>
-        <NavLink href="/prices">Prices</NavLink>
-        <NavLink href="/galery">Gallery</NavLink>
-        <NavLink href="/about">About Us</NavLink>
-        <NavLink href="/contact">Contact</NavLink>
+        <NavLink to="tentsSection">Tents</NavLink>
+        <NavLink to="pricesSection">Prices</NavLink>
+        <NavLink to="galerySection">Gallery</NavLink>
+        <NavLink to="aboutSection">About Us</NavLink>
+        <NavLink to="contactSection">Contact</NavLink>
       </nav>
     </section>
   );
