@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-// import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Link } from "react-scroll";
 
@@ -39,9 +38,9 @@ export const Navbar = () => {
       <nav className="w-full flex justify-end items-center gap-2">
         <NavLink to="tentsSection">Tents</NavLink>
         <NavLink to="pricesSection">Prices</NavLink>
-        <NavLink to="galerySection">Gallery</NavLink>
+        <NavLink to="accessoriesSection">Accesories</NavLink>
+        <NavLink to="gallerySection">Gallery</NavLink>
         <NavLink to="aboutSection">About Us</NavLink>
-        <NavLink to="contactSection">Contact</NavLink>
       </nav>
     </section>
   );

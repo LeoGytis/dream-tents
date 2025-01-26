@@ -1,5 +1,5 @@
 import AboutSection from "./components/AboutSection";
-import ContactSection from "./components/ContactSection";
+import AccessoriesSection from "./components/AccessoriesSection";
 import GallerySection from "./components/GallerySection";
 import HeroSection from "./components/HeroSection";
 import PricesSection from "./components/PricesSection";
@@ -11,10 +11,10 @@ const HomePage = () => {
       {/* <SlideShow /> */}
       <HeroSection />
       <TentsSection />
+      <AccessoriesSection />
       <PricesSection />
       <GallerySection />
       <AboutSection />
-      <ContactSection />
     </>
   );
 };
