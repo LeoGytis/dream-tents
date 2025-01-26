@@ -14,10 +14,10 @@ const HeroSection = () => {
           fill
           objectFit="cover"
         />
-        <div className="absolute z-10 left-0 bottom-4 w-1/2 flex flex-col justify-center items-end gap-4 text-white">
-          <h1 className="text-6xl font-extrabold text-center">DREAM TENTS</h1>
-          <h3>Forever under bliss dream</h3>
-          <button className="w-1/4 self-end font-bold border-2 border-white p-2">
+        <div className="absolute z-10 left-0 bottom-4 w-1/2 flex flex-col items-start gap-4 text-white m-16">
+          <h1 className="">DREAM TENTS</h1>
+          <h4>Forever under bliss dream</h4>
+          <button className="w-1/4 font-bold border-2 border-white p-2">
             ORDER NOW
           </button>
         </div>

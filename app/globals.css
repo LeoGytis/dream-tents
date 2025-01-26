@@ -32,6 +32,12 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 h3 {
   font-size: 1.5rem;
   font-weight: 700;

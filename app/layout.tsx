@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// fonts {Nunito, Inter, Lato, Quicksand, Lora, Libre Baskerville }
+// fonts { Nunito, Inter, Lato, Quicksand, Lora, Libre_Baskerville }
 import { Libre_Baskerville } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";

@@ -16,9 +16,6 @@ const TentsSection = () => {
           <Image
             src={`/images/gallery/tent8.jpg`}
             alt="tentssection"
-            // width={500}
-            // height={700}
-            // layout="fill"
             fill
             objectFit="cover"
           />
