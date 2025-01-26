@@ -8,6 +8,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --cream-dream: #eee7da;
+  --orange-study: #ff5421; /* from e-study */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -24,25 +26,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
-  /* background-image: url("https://www.transparenttextures.com/patterns/paper.png");  */
-  /* background-image: url("https://www.transparenttextures.com/patterns/diamonds-are-forever.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/paper.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/dotnoise-light-grey.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/elegant-grid.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/arches.png"); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png"); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/climpek.png"); */
   /*  LIKE */
-  /* background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png"); */
-  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
-  /* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/polyester-lite.png"); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/redox-02.png"); */
-  background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");
-  /* background-image: url("https://www.transparenttextures.com/patterns/simple-horizontal-light.png"); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/snow.png"); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/squairy.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/straws.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/polyester-lite.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/redox-02.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/squairy.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png"); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png"); */
 }
 
 h1 {
@@ -70,5 +68,5 @@ button:hover {
 
 .nav-bar {
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");
+  background-image: url("https://www.transparenttextures.com/patterns/snow.png");
 }

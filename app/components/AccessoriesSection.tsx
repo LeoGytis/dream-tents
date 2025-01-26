@@ -10,27 +10,31 @@ import { SiBlockbench } from "react-icons/si";
 interface IconWithLabelProps {
   Icon: IconType;
   label: string;
+  isSelected: boolean;
   onClick: () => void;
 }
 
 const IconWithLabel: React.FC<IconWithLabelProps> = ({
   Icon,
   label,
+  isSelected,
   onClick,
 }) => {
   return (
     <div
-      className="flex flex-col items-center gap-2 hover:cursor-pointer"
+      className={`flex flex-col items-center gap-2 hover:text-[#ff5421] hover:cursor-pointer ${
+        isSelected ? "text-[#ff5521c4]" : "text-gray-500"
+      }`}
       onClick={onClick}
     >
-      <Icon className="w-12 h-12 text-orange-700" />
+      <Icon className="w-12 h-12" />
       <span>{label}</span>
     </div>
   );
 };
 
 const AccessoriesSection = () => {
-  const [selectedIcon, setSelectedIcon] = useState<string | null>(null);
+  const [selectedIcon, setSelectedIcon] = useState<string | null>("Chairs");
 
   const handleIconClick = (label: string) => {
     setSelectedIcon(label);
@@ -54,42 +58,47 @@ const AccessoriesSection = () => {
         return "";
     }
   };
-
   return (
     <section
       id="accessoriesSection"
-      className="w-full h-[400px] flex flex-col  gap-4 my-10 mx-10"
+      className="w-full h-[400px] flex flex-col gap-4 my-10 mx-10"
     >
       <div className="flex justify-between items-center border-b-2 pb-6">
         <IconWithLabel
           Icon={GiWoodenChair}
           label="Chairs"
           onClick={() => handleIconClick("Chairs")}
+          isSelected={selectedIcon === "Chairs"}
         />
         <IconWithLabel
           Icon={GiEmptyChessboard}
           label="Chessboard"
           onClick={() => handleIconClick("Chessboard")}
+          isSelected={selectedIcon === "Chessboard"}
         />
         <IconWithLabel
           Icon={HiOutlineLightBulb}
           label="Lighting"
           onClick={() => handleIconClick("Lighting")}
+          isSelected={selectedIcon === "Lighting"}
         />
         <IconWithLabel
           Icon={PiDiscoBallFill}
           label="Disco Ball"
           onClick={() => handleIconClick("Disco Ball")}
+          isSelected={selectedIcon === "Disco Ball"}
         />
         <IconWithLabel
           Icon={SiBlockbench}
           label="Bench"
           onClick={() => handleIconClick("Bench")}
+          isSelected={selectedIcon === "Bench"}
         />
         <IconWithLabel
           Icon={MdOutlineTableRestaurant}
           label="Tables"
           onClick={() => handleIconClick("Tables")}
+          isSelected={selectedIcon === "Tables"}
         />
       </div>
 
