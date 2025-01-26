@@ -2,10 +2,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section
-      id="aboutSection"
-      className="w-full h-[400px] flex gap-8 my-10 mx-10"
-    >
+    <section id="aboutSection" className="w-full h-[400px] flex gap-8 mx-10">
       <div className="w-1/2 flex flex-col items-end gap-4">
         <h1>About Us</h1>
         <p className="text-end">

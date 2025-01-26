@@ -12,8 +12,8 @@ const HomePage = () => {
       <HeroSection />
       <TentsSection />
       <AccessoriesSection />
-      <PricesSection />
       <GallerySection />
+      <PricesSection />
       <AboutSection />
     </>
   );

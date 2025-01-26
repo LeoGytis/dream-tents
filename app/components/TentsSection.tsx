@@ -2,10 +2,7 @@ import Image from "next/image";
 
 const TentsSection = () => {
   return (
-    <section
-      id="tentsSection"
-      className="w-full h-[400px] flex gap-8 my-10 mx-10"
-    >
+    <section id="tentsSection" className="w-full h-[400px] flex gap-8 mx-10">
       <div className="w-1/2 flex flex-col items-end gap-4">
         <h1>Rent Our Tents</h1>
         <p className="text-end">

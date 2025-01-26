@@ -7,7 +7,7 @@ const PricesSection = () => {
         <Image src={`/images/spec/spectentpng.png`} alt="tentssection" fill />
       </div>
       <div className="w-1/2 flex flex-col gap-4 p-6">
-        <h1>Palapinė</h1>
+        <h1>Tent</h1>
         <div>
           <span>Palapinės išmatavimai:</span>
           <span> 4,5 x 5 x 6</span>
