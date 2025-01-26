@@ -1,11 +1,11 @@
-import SlideShow from "./components/SlideShow";
+import HeroSection from "./components/HeroSection";
 import TentsSection from "./components/TentsSection";
 
 const HomePage = () => {
   return (
     <>
-      <SlideShow />
-      <TentsSection />
+      {/* <SlideShow /> */}
+      <HeroSection />
       <TentsSection />
     </>
   );

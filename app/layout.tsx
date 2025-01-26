@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import {Nunito, Inter, Lato, Quicksand} from "next/font/google";
-import { Quicksand } from "next/font/google";
+// fonts {Nunito, Inter, Lato, Quicksand, Lora, Libre Baskerville }
+import { Libre_Baskerville } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 
-const font = Quicksand({
-  //   weight: "400",
+const font = Libre_Baskerville({
+  weight: ["400"],
   subsets: ["latin"],
 });
 

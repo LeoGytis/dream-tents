@@ -3,7 +3,16 @@ import Image from "next/image";
 import Slider from "react-slick";
 
 const SlideShow = () => {
-  const imageNames = ["tent1", "tent2", "tent3", "tent4", "tent5", "tent6"];
+  const imageNames = [
+    "tent1",
+    "tent2",
+    "tent3",
+    "tent4",
+    "tent5",
+    "tent6",
+    "tent7",
+    "tent8",
+  ];
   const slideShowSettings = {
     dots: true,
     arrows: true, //arrows to adjust

@@ -14,7 +14,7 @@ const TentsSection = () => {
         </div>
         <div className="w-1/2 h-full relative">
           <Image
-            src={`/images/tentssection.jpg`}
+            src={`/images/gallery/tent8.jpg`}
             alt="tentssection"
             // width={500}
             // height={700}
