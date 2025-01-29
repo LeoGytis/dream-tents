@@ -2,11 +2,8 @@ import Image from "next/image";
 
 const TentsSection = () => {
   return (
-    <section
-      id="tentsSection"
-      className="h-[400px] flex justify-center items-center gap-8 py-10"
-    >
-      <div className="max-w-7xl">
+    <section id="tentsSection" className="flex justify-center py-16">
+      <div className="max-w-7xl flex gap-8">
         <div className="w-1/2 flex flex-col items-end gap-4">
           <h1>Rent Our Tents</h1>
           <p className="text-end">
@@ -20,10 +17,10 @@ const TentsSection = () => {
           </p>
           <button className="border-black py-3 px-10 mt-8">PRICES</button>
         </div>
-        <div className="w-1/2 h-full relative">
+        <div className="w-1/2 relative">
           <Image
-            src={`/images/gallery/tent7.jpg`}
-            alt="tentssection"
+            src={`/images/gallery/tent1.jpg`}
+            alt="tents_section"
             fill
             objectFit="cover"
           />
