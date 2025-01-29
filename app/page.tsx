@@ -6,16 +6,16 @@ import TentsSection from "./components/TentsSection";
 
 const HomePage = () => {
   return (
-    <div className="relative h-screen">
+    <>
       <HeroSection />
-      <div className="relative w-screen z-10 bg-white mt-[700px]">
+      <div className="w-screen z-10 bg-white mt-[65vh]">
         <TentsSection />
         <AccessoriesSection />
         {/* <GallerySection /> */}
         <PricesSection />
         <AboutSection />
       </div>
-    </div>
+    </>
   );
 };
 

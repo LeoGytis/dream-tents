@@ -17,18 +17,20 @@ const AccessoriesSection = () => {
   return (
     <section
       id="accessoriesSection"
-      className="w-full h-[400px] flex flex-col gap-4 mx-10"
+      className="h-[400px] flex flex-col justify-center items-center gap-4 mx-10"
     >
-      <AccessoriesHeader
-        selectedIcon={selectedIcon}
-        onIconSelect={setSelectedIcon}
-      />
+      <div className="max-w-7xl w-full">
+        <AccessoriesHeader
+          selectedIcon={selectedIcon}
+          onIconSelect={setSelectedIcon}
+        />
 
-      {selectedIcon && (
-        <article className="mt-6">
-          <AccessoriesArticle label={selectedIcon} />
-        </article>
-      )}
+        {selectedIcon && (
+          <article className="mt-6">
+            <AccessoriesArticle label={selectedIcon} />
+          </article>
+        )}
+      </div>
     </section>
   );
 };

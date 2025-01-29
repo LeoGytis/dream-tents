@@ -4,9 +4,9 @@ const TentsSection = () => {
   return (
     <section
       id="tentsSection"
-      className="h-[400px] flex justify-center items-center gap-8 py-10 bg-gray-500"
+      className="h-[400px] flex justify-center items-center gap-8 py-10"
     >
-      <div className="max-w-7xl border-2 border-blue-500">
+      <div className="max-w-7xl">
         <div className="w-1/2 flex flex-col items-end gap-4">
           <h1>Rent Our Tents</h1>
           <p className="text-end">

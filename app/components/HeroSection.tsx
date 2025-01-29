@@ -3,7 +3,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section id="heroSection" className="fixed w-screen h-[900px]">
-      <div className="w-[100vw] h-full absolute left-1/2 transform -translate-x-1/2">
+      <div className="w-[100vw] h-full">
         <Image
           src={`/images/gallery/tent5.jpg`}
           alt="HeroSection"
