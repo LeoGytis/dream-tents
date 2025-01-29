@@ -25,7 +25,9 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  /* background-image: url("/images/gallery/tent1.jpg"); */
+
   /* background-image: url("https://www.transparenttextures.com/patterns/paper.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/dotnoise-light-grey.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/elegant-grid.png"); */
@@ -37,7 +39,7 @@ body {
   /* background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/redox-02.png"); */
-  background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/snow.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/squairy.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png"); */
   /* background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png"); */
