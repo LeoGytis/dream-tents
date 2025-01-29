@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="bg-[#151515] border-t-2 border-[#FF5421] text-white mt-10">
+    <section className="sticky bg-[#151515] border-t-2 border-[#FF5421] text-white">
       <div className="mx-auto max-w-screen-xl flex justify-between items-center text-lg py-16 ">
         <div className="flex flex-col gap-4">
           <h3>Paslaugos</h3>

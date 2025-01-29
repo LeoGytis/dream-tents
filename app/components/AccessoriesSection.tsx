@@ -15,11 +15,8 @@ const AccessoriesSection = () => {
   const [selectedIcon, setSelectedIcon] = useState<AccessoryType>("Chairs");
 
   return (
-    <section
-      id="accessoriesSection"
-      className="h-[400px] flex flex-col justify-center items-center gap-4 mx-10"
-    >
-      <div className="max-w-7xl w-full">
+    <section id="accessoriesSection" className="flex justify-center py-20">
+      <div className="w-full max-w-7xl">
         <AccessoriesHeader
           selectedIcon={selectedIcon}
           onIconSelect={setSelectedIcon}
