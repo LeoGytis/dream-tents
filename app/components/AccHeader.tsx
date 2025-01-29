@@ -5,14 +5,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 import { MdOutlineTableRestaurant } from "react-icons/md";
 import { PiDiscoBallFill } from "react-icons/pi";
 import { SiBlockbench } from "react-icons/si";
-
-type AccessoryType =
-  | "Chairs"
-  | "Chessboard"
-  | "Lighting"
-  | "Disco Ball"
-  | "Bench"
-  | "Tables";
+import { AccessoryType } from "./AccessoriesSection";
 
 interface AccessoriesHeaderProps {
   selectedIcon: AccessoryType;

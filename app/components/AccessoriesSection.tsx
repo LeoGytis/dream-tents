@@ -3,7 +3,7 @@ import { useState } from "react";
 import AccessoriesArticle from "./AccessoriesArticle";
 import AccessoriesHeader from "./AccHeader";
 
-type AccessoryType =
+export type AccessoryType =
   | "Chairs"
   | "Chessboard"
   | "Lighting"

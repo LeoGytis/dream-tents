@@ -1,13 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
-type AccessoryType =
-  | "Chairs"
-  | "Chessboard"
-  | "Lighting"
-  | "Disco Ball"
-  | "Bench"
-  | "Tables";
+import { AccessoryType } from "./AccessoriesSection";
 
 const accessoryData: Record<
   AccessoryType,
@@ -17,13 +10,13 @@ const accessoryData: Record<
     title: "Chairs",
     description:
       "Our exclusive range of chairs is designed to offer unmatched comfort...",
-    image: "/images/gallery/tent3.jpg",
+    image: "/images/gallery/tent2.jpg",
   },
   Chessboard: {
     title: "Chessboard",
     description:
       "Dive into the world of strategy and intellect with our premium-quality chessboards...",
-    image: "/images/gallery/tent3.jpg",
+    image: "/images/gallery/tent1.jpg",
   },
   Lighting: {
     title: "Lighting",
@@ -35,31 +28,31 @@ const accessoryData: Record<
     title: "Disco Ball",
     description:
       "Take your event to the next level with our iconic disco balls, guaranteed to bring sparkle...",
-    image: "/images/gallery/tent3.jpg",
+    image: "/images/gallery/tent5.jpg",
   },
   Bench: {
     title: "Bench",
     description:
       "Combine functionality and elegance with our versatile collection of benches...",
-    image: "/images/gallery/tent3.jpg",
+    image: "/images/gallery/tent6.jpg",
   },
   Tables: {
     title: "Tables",
     description:
       "Elevate the organization and style of your event with our premium selection of tables...",
-    image: "/images/gallery/tent3.jpg",
+    image: "/images/gallery/tent7.jpg",
   },
 };
 
-type AccessoriesArticleProps = {
+interface AccessoriesArticleProps {
   label: AccessoryType;
-};
+}
 
 const AccessoriesArticle: React.FC<AccessoriesArticleProps> = ({ label }) => {
   const { title, description, image } = accessoryData[label];
 
   return (
-    <div className="accessories-article">
+    <>
       <Image
         src={image}
         alt={title}
@@ -69,7 +62,7 @@ const AccessoriesArticle: React.FC<AccessoriesArticleProps> = ({ label }) => {
       />
       <h2>{title}</h2>
       <p>{description}</p>
-    </div>
+    </>
   );
 };
 
