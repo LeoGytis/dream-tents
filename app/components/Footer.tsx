@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h3>Rekvizitai</h3>
           <span>Imones Kodas: 123456789</span>
-          <span>Swedbank</span>
+          <span>Swedbankas</span>
           <span>A/S: LTLT157300010158225022</span>
         </div>
         <div className="flex flex-col gap-10">
