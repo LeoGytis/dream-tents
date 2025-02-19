@@ -10,6 +10,7 @@ const Footer = () => {
           <span>Nuoma</span>
           <span>Suoliuku Nuoma</span>
           <span>Apsvietimo Nuoma</span>
+          <span>Veidrodziu Nuoma</span>
         </div>
         <div className="flex flex-col gap-4">
           <h3>Rekvizitai</h3>
