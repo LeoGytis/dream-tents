@@ -1,8 +1,8 @@
 import SectionAccessories from '@/components/sections/Accessories/AccessoriesSection';
 import HeroSection from '@/components/sections/HeroSection';
+import SectionPrices from '@/components/sections/Prices/SectionPrices';
 import SectionAboutUs from '@/components/sections/SectionAboutUs';
 import SectionGallery from '@/components/sections/SectionGallery';
-import SectionPrices from '@/components/sections/SectionPrices';
 import SectionRentOurTents from '@/components/sections/SectionRentOurTents';
 
 const HomePage = () => {
