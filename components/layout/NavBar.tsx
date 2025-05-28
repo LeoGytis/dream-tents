@@ -35,10 +35,10 @@ export const Navbar = () => {
 			</Link>
 
 			<div className="flex items-center justify-end w-full gap-2 max-lg:hidden">
-				<NavLink to="gallerySection">Gallery</NavLink>
-				<NavLink to="pricesSection">Prices</NavLink>
-				<NavLink to="accessoriesSection">Accesories</NavLink>
-				<NavLink to="aboutSection">About Us</NavLink>
+				<NavLink to="sectionGallery">Gallery</NavLink>
+				<NavLink to="sectionPrices">Prices</NavLink>
+				<NavLink to="sectionAccessories">Accesories</NavLink>
+				<NavLink to="sectionAbout">About Us</NavLink>
 			</div>
 		</nav>
 	);

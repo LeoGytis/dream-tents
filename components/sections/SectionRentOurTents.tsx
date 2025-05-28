@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-const TentsSection = () => {
+const SectionRentOurTents = () => {
 	return (
 		<section className="flex justify-center py-20">
-			<div className="max-w-7xl flex gap-8">
-				<div className="w-1/2 flex flex-col items-end gap-4">
+			<div className="flex gap-8 max-w-7xl">
+				<div className="flex flex-col items-end w-1/2 gap-4">
 					<h1>Rent Our Tents</h1>
 					<p className="text-end">
 						Planning a celebration in the great outdoors? Our event
@@ -16,11 +16,11 @@ const TentsSection = () => {
 						rentals, pavilion lighting solutions, and illuminated
 						letter rentals.
 					</p>
-					<button className="border-black py-3 px-10 mt-8">
+					<button className="px-10 py-3 mt-8 border-black">
 						PRICES
 					</button>
 				</div>
-				<div className="w-1/2 relative">
+				<div className="relative w-1/2">
 					<Image
 						src={`/images/gallery/tent1.jpg`}
 						alt="tents_section"
@@ -33,4 +33,4 @@ const TentsSection = () => {
 	);
 };
 
-export default TentsSection;
+export default SectionRentOurTents;

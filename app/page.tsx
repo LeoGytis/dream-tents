@@ -1,20 +1,20 @@
-import AboutSection from '@/components/sections/AboutSection';
-import AccessoriesSection from '@/components/sections/Accessories/AccessoriesSection';
-import GallerySection from '@/components/sections/GallerySection';
+import SectionAccessories from '@/components/sections/Accessories/AccessoriesSection';
 import HeroSection from '@/components/sections/HeroSection';
-import PricesSection from '@/components/sections/PricesSection';
-import TentsSection from '@/components/sections/TentsSection';
+import SectionAboutUs from '@/components/sections/SectionAboutUs';
+import SectionGallery from '@/components/sections/SectionGallery';
+import SectionPrices from '@/components/sections/SectionPrices';
+import SectionRentOurTents from '@/components/sections/SectionRentOurTents';
 
 const HomePage = () => {
 	return (
 		<>
 			<HeroSection />
 			<div className="w-screen z-10 background mt-[100dvh]">
-				<TentsSection />
-				<GallerySection />
-				<PricesSection />
-				<AccessoriesSection />
-				<AboutSection />
+				<SectionRentOurTents />
+				<SectionGallery />
+				<SectionPrices />
+				<SectionAccessories />
+				<SectionAboutUs />
 			</div>
 		</>
 	);

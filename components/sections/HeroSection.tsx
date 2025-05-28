@@ -1,9 +1,9 @@
 import HeroImage from '@/public/images/gallery/tent5.jpg';
 import Image from 'next/image';
 
-const HeroSection = () => {
+const SectionHero = () => {
 	return (
-		<section id="heroSection" className="fixed visible w-full h-dvh">
+		<section id="sectionHero" className="fixed visible w-full h-dvh">
 			<Image
 				src={HeroImage}
 				alt="Dream Tents"
@@ -30,4 +30,4 @@ const HeroSection = () => {
 	);
 };
 
-export default HeroSection;
+export default SectionHero;
