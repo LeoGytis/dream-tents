@@ -23,25 +23,24 @@ const NavLink: React.FC<NavLinkProps> = ({to, children}) => {
 
 export const Navbar = () => {
 	return (
-		<nav className="sticky top-0 z-50 px-10 py-4 border-b border-orange-400 background">
-			<nav className="flex items-center justify-between mx-auto max-w-7xl">
-				<Link to="/" className="hover:cursor-pointer">
-					<Image
-						src="/images/logo_orange.png"
-						alt="logo"
-						width={150}
-						height={150}
-					/>
-				</Link>
+		<nav className="flex items-center justify-between sticky top-0 z-[9999] px-10 py-4 border-b border-orange-400 background">
+			<Link to="/" className="cursor-pointer flex items-center gap-4">
+				<Image
+					src="/images/logo_orange.png"
+					alt="logo"
+					width={100}
+					height={100}
+				/>
+				<h1 className="text-4xl text-nowrap">Dream Tents</h1>
+			</Link>
 
-				<div className="flex items-center justify-end w-full gap-2">
-					<NavLink to="tentsSection">Tents</NavLink>
-					<NavLink to="pricesSection">Prices</NavLink>
-					<NavLink to="accessoriesSection">Accesories</NavLink>
-					<NavLink to="gallerySection">Gallery</NavLink>
-					<NavLink to="aboutSection">About Us</NavLink>
-				</div>
-			</nav>
+			<div className="flex items-center justify-end w-full gap-2">
+				<NavLink to="tentsSection">Tents</NavLink>
+				<NavLink to="pricesSection">Prices</NavLink>
+				<NavLink to="accessoriesSection">Accesories</NavLink>
+				<NavLink to="gallerySection">Gallery</NavLink>
+				<NavLink to="aboutSection">About Us</NavLink>
+			</div>
 		</nav>
 	);
 };
