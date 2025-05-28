@@ -34,7 +34,7 @@ export const Navbar = () => {
 				<h1 className="text-4xl text-nowrap">Dream Tents</h1>
 			</Link>
 
-			<div className="flex items-center justify-end w-full gap-2">
+			<div className="flex items-center justify-end w-full gap-2 max-lg:hidden">
 				<NavLink to="tentsSection">Tents</NavLink>
 				<NavLink to="pricesSection">Prices</NavLink>
 				<NavLink to="accessoriesSection">Accesories</NavLink>
