@@ -12,8 +12,8 @@ const HomePage = () => {
 			<div className="w-screen z-10 background mt-[100dvh]">
 				<TentsSection />
 				<GallerySection />
-				<AccessoriesSection />
 				<PricesSection />
+				<AccessoriesSection />
 				<AboutSection />
 			</div>
 		</>

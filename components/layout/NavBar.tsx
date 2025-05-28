@@ -28,16 +28,16 @@ export const Navbar = () => {
 		<nav className="flex items-center justify-between sticky top-0 z-[9999] px-10 py-4 border-b border-orange-400 background">
 			<Link
 				to="/"
-				className="cursor-pointer flex items-center gap-4 mx-auto"
+				className="flex items-center gap-4 mx-auto cursor-pointer"
 			>
 				<Image src={Logo} alt="logo" width={100} height={20} />
 				<h1 className="text-4xl text-nowrap">Dream Tents</h1>
 			</Link>
 
 			<div className="flex items-center justify-end w-full gap-2 max-lg:hidden">
+				<NavLink to="gallerySection">Gallery</NavLink>
 				<NavLink to="pricesSection">Prices</NavLink>
 				<NavLink to="accessoriesSection">Accesories</NavLink>
-				<NavLink to="gallerySection">Gallery</NavLink>
 				<NavLink to="aboutSection">About Us</NavLink>
 			</div>
 		</nav>
