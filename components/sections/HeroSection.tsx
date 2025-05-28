@@ -1,5 +1,7 @@
+'use client';
 import HeroImage from '@/public/images/gallery/tent5.jpg';
 import Image from 'next/image';
+import {Link} from 'react-scroll';
 
 const SectionHero = () => {
 	return (
@@ -24,7 +26,15 @@ const SectionHero = () => {
 				&nbsp;
 				<h3>dream</h3>
 				<br />
-				<button className="px-10 py-3 mt-8">ORDER NOW</button>
+				<Link
+					to="sectionPrices"
+					smooth={true}
+					duration={500}
+					offset={-100}
+					className="px-10 py-3 mt-8 transition-all duration-300 bg-transparent border border-white cursor-pointer w-fit text-inherit hover:bg-black hover:border-black hover:text-white"
+				>
+					ORDER NOW
+				</Link>
 			</div>
 		</section>
 	);

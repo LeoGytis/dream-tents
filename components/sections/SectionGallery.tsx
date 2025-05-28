@@ -7,7 +7,7 @@ const SectionGallery = () => {
 	return (
 		<section
 			id="sectionGallery"
-			className="flex justify-center py-20 bg-gray-200"
+			className="flex justify-center py-20 !bg-gray-300 background"
 		>
 			<div className="grid w-full grid-cols-3 gap-8 max-w-7xl">
 				{imageNames.map((name, index) => (

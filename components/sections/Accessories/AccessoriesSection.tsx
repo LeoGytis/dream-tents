@@ -15,7 +15,10 @@ const SectionAccessories = () => {
 	const [selectedIcon, setSelectedIcon] = useState<AccessoryType>('Chairs');
 
 	return (
-		<section id="sectionAccessories" className="flex justify-center py-20">
+		<section
+			id="sectionAccessories"
+			className="flex justify-center py-20 !bg-gray-300 background"
+		>
 			<div className="w-full max-w-7xl">
 				<AccessoriesHeader
 					selectedIcon={selectedIcon}

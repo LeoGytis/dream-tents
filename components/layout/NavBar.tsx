@@ -1,6 +1,5 @@
 'use client';
 import Logo from '@/public/logo/logo_black.png';
-
 import Image from 'next/image';
 import {Link} from 'react-scroll';
 
@@ -25,7 +24,7 @@ const NavLink: React.FC<NavLinkProps> = ({to, children}) => {
 
 export const Navbar = () => {
 	return (
-		<nav className="flex items-center justify-between sticky top-0 z-[9999] px-10 py-4 border-b border-orange-400 background">
+		<nav className="flex items-center justify-between sticky top-0 z-[9999] px-10 py-4 border-b border-orange-400 background shadow-xl">
 			<Link
 				to="/"
 				className="flex items-center gap-4 mx-auto cursor-pointer"

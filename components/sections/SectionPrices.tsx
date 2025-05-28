@@ -4,7 +4,7 @@ const SectionPrices = () => {
 	return (
 		<section
 			id="sectionPrices"
-			className="flex justify-center py-20 bg-gray-200"
+			className="flex justify-center py-20 bg-gray-200 background"
 		>
 			<div className="flex w-full gap-8 max-w-7xl">
 				<div className="relative w-1/2">
