@@ -1,32 +1,32 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import '@/styles/globals.css';
+import type {Metadata} from 'next';
 // fonts { Nunito, Inter, Lato, Quicksand, Lora, Libre_Baskerville }
-import { Libre_Baskerville } from "next/font/google";
-import Footer from "./components/Footer";
-import Navbar from "./components/NavBar";
+import {Libre_Baskerville} from 'next/font/google';
+import Footer from '../components/layout/Footer';
+import Navbar from '../components/layout/NavBar';
 
 const font = Libre_Baskerville({
-  weight: ["400"],
-  subsets: ["latin"],
+	weight: ['400'],
+	subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Dream Tents",
-  description: "Rent a tent for your festival experience",
+	title: 'Dream Tents',
+	description: 'Rent a tent for your festival experience',
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={font.className}>
-        <Navbar />
-        <main className="flex">{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" className="h-full">
+			<body className={`${font.className} h-dvh`}>
+				<Navbar />
+				<main className="flex flex-1">{children}</main>
+				<Footer />
+			</body>
+		</html>
+	);
 }
