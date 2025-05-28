@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const TentsSection = () => {
 	return (
-		<section id="tentsSection" className="flex justify-center py-20">
+		<section className="flex justify-center py-20">
 			<div className="max-w-7xl flex gap-8">
 				<div className="w-1/2 flex flex-col items-end gap-4">
 					<h1>Rent Our Tents</h1>

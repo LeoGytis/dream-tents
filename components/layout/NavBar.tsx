@@ -1,5 +1,5 @@
 'use client';
-import Logo from '@/public/logo/logo_black2.png';
+import Logo from '@/public/logo/logo_black.png';
 
 import Image from 'next/image';
 import {Link} from 'react-scroll';
@@ -35,7 +35,6 @@ export const Navbar = () => {
 			</Link>
 
 			<div className="flex items-center justify-end w-full gap-2 max-lg:hidden">
-				<NavLink to="tentsSection">Tents</NavLink>
 				<NavLink to="pricesSection">Prices</NavLink>
 				<NavLink to="accessoriesSection">Accesories</NavLink>
 				<NavLink to="gallerySection">Gallery</NavLink>
