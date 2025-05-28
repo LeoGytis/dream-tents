@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import {useRouter} from 'next/navigation';
 import {Link} from 'react-scroll';
 
 interface NavLinkProps {
@@ -15,7 +14,7 @@ const NavLink: React.FC<NavLinkProps> = ({to, children}) => {
 			smooth={true}
 			duration={500}
 			offset={-100}
-			className="rounded cursor-pointer border-b border-b-transparent hover:bg-orange-100 hover:border-b-orange-300 transition-colors duration-300 text-xl py-2 px-6"
+			className="px-6 py-2 text-xl transition-colors duration-300 border border-transparent rounded cursor-pointer hover:bg-orange-300/10 hover:border-orange-300"
 		>
 			{children}
 		</Link>
@@ -23,26 +22,27 @@ const NavLink: React.FC<NavLinkProps> = ({to, children}) => {
 };
 
 export const Navbar = () => {
-	const router = useRouter();
-
 	return (
-		<header className="sticky top-0 z-50 flex justify-between items-center border-b border-orange-400 py-4 px-10 nav-bar">
-			<Image
-				src="/images/logo_orange.png"
-				alt="logo"
-				width={150}
-				height={150}
-				onClick={() => router.push('/')}
-				className="hover:cursor-pointer"
-			/>
-			<nav className="w-full flex justify-end items-center gap-2">
-				<NavLink to="tentsSection">Tents</NavLink>
-				<NavLink to="pricesSection">Prices</NavLink>
-				<NavLink to="accessoriesSection">Accesories</NavLink>
-				<NavLink to="gallerySection">Gallery</NavLink>
-				<NavLink to="aboutSection">About Us</NavLink>
+		<nav className="sticky top-0 z-50 px-10 py-4 border-b border-orange-400 background">
+			<nav className="flex items-center justify-between mx-auto max-w-7xl">
+				<Link to="/" className="hover:cursor-pointer">
+					<Image
+						src="/images/logo_orange.png"
+						alt="logo"
+						width={150}
+						height={150}
+					/>
+				</Link>
+
+				<div className="flex items-center justify-end w-full gap-2">
+					<NavLink to="tentsSection">Tents</NavLink>
+					<NavLink to="pricesSection">Prices</NavLink>
+					<NavLink to="accessoriesSection">Accesories</NavLink>
+					<NavLink to="gallerySection">Gallery</NavLink>
+					<NavLink to="aboutSection">About Us</NavLink>
+				</div>
 			</nav>
-		</header>
+		</nav>
 	);
 };
 
