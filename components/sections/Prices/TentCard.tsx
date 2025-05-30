@@ -28,15 +28,17 @@ const TentCard: FC<CardProps> = ({
 						{capacity}
 					</span>
 				</div>
-				<div className="flex flex-col gap-4 p-6">
-					<h2 className="text-2xl font-bold">{title}</h2>
-					<span className="text-lg text-gray-700">{description}</span>
+				<article className="flex flex-col justify-between gap-8 p-6">
+					<div>
+						<h2 className="mb-4 text-2xl font-bold">{title}</h2>
+						<p className="text-lg">{description}</p>
+					</div>
 					<div className="flex items-center justify-between">
 						<div className="flex flex-col gap-2">
-							<span className="text-lg text-gray-700">
+							<span className="text-lg">
 								<strong>Measurements:</strong> {measurements}
 							</span>
-							<span className="text-lg text-gray-700">
+							<span className="text-lg">
 								<strong>Size:</strong> {squareMeters}m
 								<sup>2</sup>
 							</span>
@@ -47,7 +49,7 @@ const TentCard: FC<CardProps> = ({
 							</span>
 						</div>
 					</div>
-				</div>
+				</article>
 			</div>
 		</div>
 	);

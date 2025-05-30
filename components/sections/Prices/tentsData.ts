@@ -1,7 +1,7 @@
 import tent1 from '@/public/images/gallery/tent1.jpg';
-import tent2 from '@/public/images/gallery/tent2.jpg';
-import tent3 from '@/public/images/gallery/tent3.jpg';
-import tent4 from '@/public/images/gallery/tent4.jpg';
+import tipi4 from '@/public/images/tipi4/tipi4_02.jpg';
+import tipi6 from '@/public/images/tipi6/tipi6_05.jpg';
+import tipi8 from '@/public/images/tipi8/tipi8_01.jpg';
 import {StaticImageData} from 'next/image';
 
 export interface CardProps {
@@ -26,33 +26,33 @@ export const tentCards: CardProps[] = [
 		measurements: '4m x 6m',
 	},
 	{
-		imageSrc: tent2,
+		imageSrc: tipi4,
 		title: 'Adventure Backpacker',
 		description:
-			'Lightweight 2-person tent designed for backpackers. Easy to set up and highly durable for all weather conditions.',
+			'Cozy 4.5m² tipi perfect for intimate gatherings. Create a magical atmosphere with its unique conical shape and customizable interior.',
 		price: 149,
-		capacity: '2-3',
-		squareMeters: 8,
-		measurements: '2m x 4m',
+		capacity: '4-8',
+		squareMeters: 320,
+		measurements: '4.5m x 4.5m',
 	},
 	{
-		imageSrc: tent3,
+		imageSrc: tipi6,
 		title: 'Deluxe Glamping Tent',
 		description:
-			'Luxurious 4-person tent with standing room and premium features. Perfect for those who want comfort in the wilderness.',
+			'Spacious 6m² tipi ideal for larger celebrations. Its impressive height and roomy interior make it perfect for events and gatherings.',
 		price: 399,
-		capacity: '4-6',
-		squareMeters: 16,
-		measurements: '3m x 5.3m',
+		capacity: '10-20',
+		squareMeters: 550,
+		measurements: '6m x 6m',
 	},
 	{
-		imageSrc: tent4,
+		imageSrc: tipi8,
 		title: 'Compact Solo Tent',
 		description:
 			'Ultra-lightweight 1-person tent for solo adventurers. Quick setup and excellent weather resistance.',
-		price: 89,
-		capacity: '1-2',
-		squareMeters: 4,
-		measurements: '2m x 2m',
+		price: 750,
+		capacity: '20-36',
+		squareMeters: 50,
+		measurements: '8m x 8m',
 	},
 ];
