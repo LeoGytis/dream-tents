@@ -7,9 +7,9 @@ const SectionGallery = () => {
 	return (
 		<section
 			id="sectionGallery"
-			className="flex justify-center py-20 !bg-gray-300 background"
+			className="!bg-gray-300 background py-16 lg:py-32"
 		>
-			<div className="grid w-full grid-cols-3 gap-8 max-w-7xl">
+			<div className="container grid w-full grid-cols-2 gap-8 mx-auto lg:grid-cols-3">
 				{imageNames.map((name, index) => (
 					<div key={index} className="relative h-[300px] ">
 						<Image

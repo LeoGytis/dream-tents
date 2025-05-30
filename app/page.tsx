@@ -9,7 +9,7 @@ const HomePage = () => {
 	return (
 		<>
 			<HeroSection />
-			<div className="w-screen z-10 background mt-[100dvh]">
+			<div className="z-10 background mt-[100dvh]">
 				<SectionRentOurTents />
 				<SectionGallery />
 				<SectionPrices />

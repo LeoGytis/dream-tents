@@ -13,7 +13,7 @@ const TentCard: FC<CardProps> = ({
 	measurements,
 }) => {
 	return (
-		<div className="w-full transition-all duration-300 bg-white group md:w-full lg:p-0 hover:shadow-lg hover:cursor-pointer">
+		<div className="w-full transition-all duration-300 bg-white shadow-md group md:w-full lg:p-0 hover:shadow-lg hover:cursor-pointer">
 			<div className="flex flex-col w-full">
 				<div className="relative h-full overflow-hidden">
 					<Image
