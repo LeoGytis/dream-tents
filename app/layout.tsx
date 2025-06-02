@@ -2,9 +2,11 @@ import '@/styles/globals.css';
 import type {Metadata} from 'next';
 // fonts { Nunito, Inter, Lato, Quicksand, Lora, Libre_Baskerville }
 import Navbar from '@/components/layout/NavBar';
+import ScrollUp from '@/components/layout/ScrollUp';
 import '@/styles/animations.css';
 import {Libre_Baskerville} from 'next/font/google';
 import Footer from '../components/layout/Footer';
+
 const font = Libre_Baskerville({
 	weight: ['400'],
 	subsets: ['latin'],
@@ -28,6 +30,7 @@ export default function RootLayout({
 					{children}
 				</main>
 				<Footer />
+				<ScrollUp />
 			</body>
 		</html>
 	);
