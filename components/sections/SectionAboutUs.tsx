@@ -2,8 +2,11 @@ import Image from 'next/image';
 
 const SectionAboutUs = () => {
 	return (
-		<section id="sectionAboutUs" className="flex justify-center py-20">
-			<div className="flex w-full gap-8 max-w-7xl">
+		<section
+			id="sectionAboutUs"
+			className="flex justify-center py-16 background lg:py-32"
+		>
+			<div className="flex w-full gap-8 container">
 				<div className="flex flex-col items-end w-1/2 gap-4">
 					<h1>About Us</h1>
 					<p className="text-end">
@@ -18,7 +21,7 @@ const SectionAboutUs = () => {
 						event services.
 					</p>
 				</div>
-				<div className="relative w-1/2 h-full">
+				<div className="relative flex-1 h-96">
 					<Image
 						src={`/images/about_us.jpg`}
 						alt="tentssection"

@@ -1,7 +1,7 @@
 import tent1 from '@/public/images/gallery/tent1.jpg';
 import tipi4 from '@/public/images/tipi4/tipi4_02.jpg';
 import tipi6 from '@/public/images/tipi6/tipi6_05.jpg';
-import tipi8 from '@/public/images/tipi8/tipi8_01.jpg';
+import tipi8 from '@/public/images/tipi8/tipi8_02.jpeg';
 import {StaticImageData} from 'next/image';
 
 export interface CardProps {
@@ -32,7 +32,7 @@ export const tentCards: CardProps[] = [
 			'Cozy 4.5m² tipi perfect for intimate gatherings. Create a magical atmosphere with its unique conical shape and customizable interior.',
 		price: 149,
 		capacity: '4-8',
-		squareMeters: 320,
+		squareMeters: 16,
 		measurements: '4.5m x 4.5m',
 	},
 	{
@@ -42,7 +42,7 @@ export const tentCards: CardProps[] = [
 			'Spacious 6m² tipi ideal for larger celebrations. Its impressive height and roomy interior make it perfect for events and gatherings.',
 		price: 399,
 		capacity: '10-20',
-		squareMeters: 550,
+		squareMeters: 28,
 		measurements: '6m x 6m',
 	},
 	{

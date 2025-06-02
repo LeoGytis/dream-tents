@@ -17,9 +17,10 @@ const SectionAccessories = () => {
 	return (
 		<section
 			id="sectionAccessories"
-			className="flex justify-center py-20 !bg-gray-300 background"
+			className="flex justify-center !bg-gray-300 
+			 py-16 background lg:py-32"
 		>
-			<div className="w-full max-w-7xl">
+			<div className="container">
 				<AccessoriesHeader
 					selectedIcon={selectedIcon}
 					onIconSelect={setSelectedIcon}
